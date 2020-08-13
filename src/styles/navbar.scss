@@ -1,29 +1,50 @@
-ul {
-    display: flex;
-    //to remove bullet in li 
-    list-style-type: none;
-    background-color: #45595A;
-    justify-content: flex-end;
-    align-items: center;
+@media only screen and (min-width: 992px) {
 
-    img {
-        margin-right: auto;
-    }
+    ul {
+        display: flex;
+        //to remove bullet in li 
+        list-style-type: none;
+        background-color: #45595A;
+        justify-content: flex-end;
+        align-items: center;
 
-    // li style
-    li {
-        margin-top: 25px;
-        margin-bottom: 25px;
-        margin-right: 20px;
+        img {
+            margin-right: auto;
+        }
 
-        :link {
+        // li style
+        li {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-right: 20px;
 
-            text-decoration: none;
-            font-size: 15px;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
+            :link {
+
+                text-decoration: none;
+                font-size: 15px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                color: white;
+            }
+        }
+
+        .membLink {
+            background-color: #5B7677;
+            border-radius: 10px;
+            padding: 10px;
             color: white;
+
         }
     }
 }
 
+@media only screen and (max-width: 600px) {
+    li {
+        display: none;
+
+    }
+
+    h1 {
+        color: yellow;
+    }
+}
