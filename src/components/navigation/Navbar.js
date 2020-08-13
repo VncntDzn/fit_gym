@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Switch, Route } from "react-router-dom";
+import { Switch, Route, NavLink } from "react-router-dom";
 import routes from '../../routes/router';
 import '../../styles/navbar.scss';
 
@@ -11,17 +11,17 @@ export default function Navbar() {
                 <ul>
                     <img src={require('../../assets/Fit.png')} alt="Fit Logo" height="100px" />
                     <li>
-                        <Link style={{ color: "white" }} to="/">HOME</Link>
+                        <NavLink exact style={{ color: "white" }} activeClassName="membLink" to="/">HOME</NavLink>
                     </li>
                     <li>
-                        <Link style={{ color: "white" }} to="/about">ABOUT US</Link>
+                        <NavLink exact style={{ color: "white" }} activeClassName="membLink" to="/about">ABOUT US</NavLink>
                     </li>
                     <li>
-                        <Link style={{ color: "white" }} to="/contact">CONTACT US</Link>
+                        <NavLink exact style={{ color: "white" }} activeClassName="membLink" to="/contact">CONTACT US</NavLink>
                     </li>
 
                     <li>
-                        <Link className="membLink" to="/membership">BECOME A MEMBER</Link>
+                        <NavLink exact style={{ color: "white" }} activeClassName="membLink" to="/membership">BECOME A MEMBER</NavLink>
                     </li>
                 </ul>
             </nav>

@@ -1,3 +1,5 @@
+$twenty-five: 25px;
+
 @media only screen and (min-width: 992px) {
 
     ul {
@@ -14,8 +16,8 @@
 
         // li style
         li {
-            margin-top: 25px;
-            margin-bottom: 25px;
+            margin-top: $twenty-five;
+            margin-bottom: $twenty-five;
             margin-right: 20px;
 
             :link {
@@ -33,6 +35,12 @@
             border-radius: 10px;
             padding: 10px;
             color: white;
+            margin: 10px
+        }
+
+        li:hover {
+            border-bottom: 2px solid yellowgreen;
+            letter-spacing: 5px;
 
         }
     }
