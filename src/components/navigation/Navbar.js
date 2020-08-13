@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link, Switch, Route } from "react-router-dom";
-import routes from '../../routes/router'
-import '../../styles/navbar.scss'
+import routes from '../../routes/router';
+import '../../styles/navbar.scss';
+
 export default function Navbar() {
 
     return (
@@ -10,25 +11,24 @@ export default function Navbar() {
                 <ul>
                     <img src={require('../../assets/Fit.png')} alt="Fit Logo" height="100px" />
                     <li>
-                        <Link to="/">HOME</Link>
+                        <Link style={{ color: "white" }} to="/">HOME</Link>
                     </li>
                     <li>
-                        <Link to="/about">ABOUT US</Link>
+                        <Link style={{ color: "white" }} to="/about">ABOUT US</Link>
                     </li>
                     <li>
-                        <Link to="/contact">CONTACT US</Link>
+                        <Link style={{ color: "white" }} to="/contact">CONTACT US</Link>
                     </li>
-                    <li>
-                        <Link to="/membership">BECOME A MEMBER</Link>
+                    <li style={{ backgroundColor: "#5B7677", borderRadius: "10px", padding: "10px" }}>
+                        <Link style={{ color: "white", margin: "12px", }} to="/membership">BECOME A MEMBER</Link>
                     </li>
                 </ul>
             </nav>
             <Switch>
-
                 {routes.map((route, i) => (
                     <Route exact key={i} {...route} />
                 ))}
             </Switch>
-        </div>
+        </div >
     )
 }
