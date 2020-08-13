@@ -11,17 +11,17 @@ export default function Navbar() {
                 <ul>
                     <img src={require('../../assets/Fit.png')} alt="Fit Logo" height="100px" />
                     <li>
-                        <NavLink exact style={{ color: "white" }} activeClassName="membLink" to="/">HOME</NavLink>
+                        <NavLink exact style={{ color: "white" }} activeClassName="myLinks" to="/">HOME</NavLink>
                     </li>
                     <li>
-                        <NavLink exact style={{ color: "white" }} activeClassName="membLink" to="/about">ABOUT US</NavLink>
+                        <NavLink exact style={{ color: "white" }} activeClassName="myLinks" to="/about">ABOUT US</NavLink>
                     </li>
                     <li>
-                        <NavLink exact style={{ color: "white" }} activeClassName="membLink" to="/contact">CONTACT US</NavLink>
+                        <NavLink exact style={{ color: "white" }} activeClassName="myLinks" to="/contact">CONTACT US</NavLink>
                     </li>
 
                     <li>
-                        <NavLink exact style={{ color: "white" }} activeClassName="membLink" to="/membership">BECOME A MEMBER</NavLink>
+                        <NavLink exact style={{ color: "white" }} activeClassName="myLinks" to="/membership">BECOME A MEMBER</NavLink>
                     </li>
                 </ul>
             </nav>

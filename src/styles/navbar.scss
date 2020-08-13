@@ -1,58 +1,53 @@
 $twenty-five: 25px;
+$primary-color: #45595A;
+$secondary-color: #5B7677;
 
 @media only screen and (min-width: 992px) {
+    nav {
 
-    ul {
-        display: flex;
-        //to remove bullet in li 
-        list-style-type: none;
-        background-color: #45595A;
-        justify-content: flex-end;
-        align-items: center;
+        ul {
+            img {
+                margin-right: auto;
+            }
 
-        img {
-            margin-right: auto;
-        }
+            display: flex;
+            //to remove bullet in li 
+            list-style-type: none;
+            background-color: $primary-color;
+            justify-content: flex-end;
+            align-items: center;
 
-        // li style
-        li {
-            margin-top: $twenty-five;
-            margin-bottom: $twenty-five;
-            margin-right: 20px;
+            // li style
+            li {
+                margin-top: $twenty-five;
+                margin-bottom: $twenty-five;
+                margin-right: 20px;
 
-            :link {
+                :link {
 
-                text-decoration: none;
-                font-size: 15px;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 600;
+                    text-decoration: none;
+                    font-size: 15px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    color: white;
+                }
+            }
+
+            .myLinks {
+                background-color: $secondary-color;
+                border-radius: 10px;
+                padding: 10px;
                 color: white;
+                margin: 10px
+            }
+
+            li:hover {
+                border-bottom: 2px solid yellowgreen;
+                letter-spacing: 5px;
+
             }
         }
-
-        .membLink {
-            background-color: #5B7677;
-            border-radius: 10px;
-            padding: 10px;
-            color: white;
-            margin: 10px
-        }
-
-        li:hover {
-            border-bottom: 2px solid yellowgreen;
-            letter-spacing: 5px;
-
-        }
     }
 }
 
-@media only screen and (max-width: 600px) {
-    li {
-        display: none;
-
-    }
-
-    h1 {
-        color: yellow;
-    }
-}
+@media only screen and (max-width: 600px) {}
