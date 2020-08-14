@@ -11,7 +11,7 @@ export default function Home() {
 
     }
     return (
-        <div style={{ backgroundColor: "#45595A", display: "flex", height: "685px", }}>
+        <div style={{ backgroundColor: "#45595A", display: "flex", height: "675px", }}>
             <div style={{ flex: "30%" }}>
                 <section style={h1Styles}>
                     <h1 style={{ fontSize: "70px", marginLeft: "130px" }}>Get Fit.</h1>
