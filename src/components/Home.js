@@ -13,15 +13,16 @@ export default function Home() {
         <div style={{ backgroundColor: "#45595A", display: "flex", height: "645px", }}>
             <div style={{ color: "white", alignSelf: "flex-end", padding: "30px", }}>
 
-                <div style={{ display: "flex", flexDirection: "row" }}>
-                    <p style={{ paddingLeft: "10px", width: "130px" }}>FOLLOW US ON</p>
-
-                    <img src={require('../assets/facebook.png')} alt="Facebook Logo" style={{ height: "50px" }} />
-                    <img src={require('../assets/instagram.png')} alt="Instagram Logo" style={{ height: "50px" }} />
-                    <img src={require('../assets/twitter.png')} alt="Twitter Logo" style={{ height: "50px" }} />
-
+                <div style={{ display: "flex", direction: "row" }}>
+                    <div style={{ alignSelf: "center" }}>
+                        <p style={{ paddingLeft: "10px", width: "130px" }}>FOLLOW US ON</p>
+                    </div>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                        <img src={require('../assets/facebook.png')} alt="Facebook Logo" style={{ height: "50px" }} />
+                        <img src={require('../assets/instagram.png')} alt="Instagram Logo" style={{ height: "50px" }} />
+                        <img src={require('../assets/twitter.png')} alt="Twitter Logo" style={{ height: "50px" }} />
+                    </div>
                 </div>
-
 
             </div>
             <div style={{ flex: "30%" }}>
