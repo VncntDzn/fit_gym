@@ -5,6 +5,7 @@ $secondary-color: #5B7677;
 @media only screen and (min-width: 992px) {
     nav {
 
+        
         ul {
             img {
                 margin-right: auto;
@@ -22,7 +23,7 @@ $secondary-color: #5B7677;
             li {
                 margin-top: $twenty-five;
                 margin-bottom: $twenty-five;
-                margin-right: 20px;
+                margin-right: 50px;
 
                 :link {
 
