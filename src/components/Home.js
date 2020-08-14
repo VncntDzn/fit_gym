@@ -7,11 +7,23 @@ export default function Home() {
         position: "absolute",
         top: "240px",
         zIndex: 2,
-        marginLeft: "100px",
-
+        marginLeft: "-150px"
     }
     return (
         <div style={{ backgroundColor: "#45595A", display: "flex", height: "645px", }}>
+            <div style={{ color: "white", alignSelf: "flex-end", padding: "30px", }}>
+
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                    <p style={{ paddingLeft: "10px", width: "130px" }}>FOLLOW US ON</p>
+
+                    <img src={require('../assets/facebook.png')} alt="Facebook Logo" style={{ height: "50px" }} />
+                    <img src={require('../assets/instagram.png')} alt="Instagram Logo" style={{ height: "50px" }} />
+                    <img src={require('../assets/twitter.png')} alt="Twitter Logo" style={{ height: "50px" }} />
+
+                </div>
+
+
+            </div>
             <div style={{ flex: "30%" }}>
                 <section style={h1Styles}>
                     <h1 style={{ fontSize: "70px", marginLeft: "140px" }}>Get Fit.</h1>
@@ -23,11 +35,15 @@ export default function Home() {
                 </section>
             </div>
 
-            <div style={{ flex: "60%", position: "relative", overflow: "hidden" }}>
+            <div style={{ flex: "75%", position: "relative", overflow: "hidden" }}>
                 <div style={{ width: "45vw", position: "absolute", }}>
                     <img style={{ height: "680px" }} src={require('../assets/fit_person.png')} alt="Fit Person" />
                 </div>
             </div>
+
+
+
+
         </div>
     )
 }
