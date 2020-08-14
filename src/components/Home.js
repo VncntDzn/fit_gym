@@ -11,8 +11,8 @@ export default function Home() {
 
     }
     return (
-        <div style={{ backgroundColor: "#45595A", display: "flex", height: "685px" }}>
-            <div style={{ flex: "50%", }}>
+        <div style={{ backgroundColor: "#45595A", display: "flex", height: "685px", }}>
+            <div style={{ flex: "30%" }}>
                 <section style={h1Styles}>
                     <h1 style={{ fontSize: "70px", marginLeft: "130px" }}>Get Fit.</h1>
                     <h1 style={{ fontSize: "70px", marginLeft: "130px" }}>Don't Quit.</h1>
@@ -23,8 +23,10 @@ export default function Home() {
                 </section>
             </div>
 
-            <div style={{ flex: "50%" }}>
-                <img style={{ marginRight: "-150px", height: "720px", }} src={require('../assets/fit_person.png')} alt="Fit Person" />
+            <div style={{ flex: "50%", position: "relative", overflow: "hidden" }}>
+                <div style={{ width: "45vw", position: "absolute", }}>
+                    <img style={{ height: "720px" }} src={require('../assets/fit_person.png')} alt="Fit Person" />
+                </div>
             </div>
         </div>
     )
