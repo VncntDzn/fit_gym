@@ -14,7 +14,7 @@ export default function Navbar() {
                         <NavLink exact style={{ color: "white" }} activeClassName="myLinks" to="/">HOME</NavLink>
                     </li>
                     <li>
-                        <NavLink exact style={{ color: "white" }} activeClassName="myLinks" to="/about#about">ABOUT US</NavLink>
+                        <NavLink exact style={{ color: "white" }} activeClassName="myLinks" to="/about">ABOUT US</NavLink>
                     </li>
                     <li>
                         <NavLink exact style={{ color: "white" }} activeClassName="myLinks" to="/contact">CONTACT US</NavLink>
