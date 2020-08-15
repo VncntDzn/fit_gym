@@ -21,7 +21,9 @@ export default function About() {
                         
                     </article>
                 </div>
-                <div style={{ flex: "50%", backgroundColor: "white", padding: "50px" }}>left side</div>
+                <div style={{ flex: "50%", backgroundColor: "white", padding: "50px", }}> 
+                    <img src={require('../../assets/Aboutus.png')} alt="About Us" style={{alignContent:"center"}}/>
+                </div>
             </main>
         </section>
     )

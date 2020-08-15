@@ -5,7 +5,9 @@ export default function About() {
     return (
         <section id="about">
             <main style={{ display: "flex", color: "white" }}>
-                <div style={{ flex: "50%", backgroundColor: "white", padding: "50px" }}>left side</div>
+                <div style={{ flex: "50%", backgroundColor: "white", padding: "50px" }}>
+                    <img src={require('../../assets/Aboutus.png')} alt="About Us"/>
+                </div>
                 <div className="rightSide" style={{ flex: "50%", padding: "50px" }}>
                     <h3>About Us</h3>
                     <article style={{ padding: "35px", letterSpacing: '1px' }}>
