@@ -1,9 +1,13 @@
 import React from 'react';
+import '../styles/about.scss';
 
 export default function About() {
     return (
-        <div>
-            <h1>About</h1>
-        </div>
+        <section>
+            <div style={{ display: "flex" }}>
+                <div style={{ flex: "50%" }}>left side</div>
+                <div className="rightSide" style={{ flex: "50%" }}>right side</div>
+            </div>
+        </section>
     )
 }
