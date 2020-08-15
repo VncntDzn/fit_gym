@@ -1,6 +1,6 @@
 
-import Home from '../components/Home';
-import AboutUs from '../components/AboutUs';
+import Home from '../views/Home';
+import AboutUs from '../views/AboutUs';
 import NotFound from '../components/NotFound';
 
 const routes = [
