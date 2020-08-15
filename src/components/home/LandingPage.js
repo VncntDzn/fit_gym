@@ -10,7 +10,7 @@ export default function Home() {
         marginLeft: "-200px"
     }
     return (
-        <section style={{ backgroundColor: "#45595A", display: "flex", height: "745px", }}>
+        <section style={{ backgroundColor: "#45595A", display: "flex", height: "645px", }}>
 
             {/* Follow us */}
             <div style={{ color: "white", alignSelf: "flex-end", padding: "30px", }}>
