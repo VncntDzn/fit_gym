@@ -7,8 +7,8 @@ export default function Accomplishments() {
 
             <div style={{ backgroundColor: "#45595A", color: "white", padding: "50px" }}>
                 <div>
-                    <h2>Accomplishments</h2>
-                    <hr style={{ width: "13.5vw", border: "1.5px solid yellowgreen" }} />
+                    <h1>Accomplishments</h1>
+                    <hr style={{ width: "27vw", border: "1.5px solid yellowgreen" }} />
                 </div>
                 <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-between", padding: "50px" }}>
                     <div style={{ textAlign: "center" }}>
