@@ -7,7 +7,7 @@ export default function About() {
             <main style={{ display: "flex", color: "white" }}>
                 <div style={{ flex: "50%", backgroundColor: "white", padding: "50px" }}>
                 <div style={{display: "flex", justifyContent:"center"}}>
-                    <img  src={require('../../assets/Aboutus.png')} alt="About Us" style={{paddingTop:"50px", paddingBottom:"50px"}}/>
+                    <img  src={require('../../assets/men_exercise.jpeg')} alt="About Us" width="650vw" style={{paddingTop:"50px", paddingBottom:"50px"}}/>
                 </div>
                 </div>
                 <div className="rightSide" style={{ flex: "50%", padding: "50px" }}>
