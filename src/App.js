@@ -7,7 +7,6 @@ import Footer from './components/Footer';
 
 export default class App extends Component {
   render() {
-    //routes.map(route) => console.log(object)
     console.log(...routes);
     return (
 
