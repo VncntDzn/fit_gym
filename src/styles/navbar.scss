@@ -1,46 +1,100 @@
 @import '_base.scss';
 
-@media only screen and (min-width: 992px) {
+
+@media only screen and (min-width:992px) {
     nav {
         ul {
-            img {
-                margin-right: auto;
-                padding-left: 40px;
-            }
-
             display: flex;
             //to remove bullet in li 
             list-style-type: none;
             background-color: $primary-color;
-            justify-content: flex-end;
             align-items: center;
+
+            .nav__logo {
+                margin-right: auto;
+                padding-left: 40px;
+                height: 100px;
+            }
 
             // li style
             li {
                 margin: 25px 50px 25px 0;
 
-                :link {
+                &:hover {
+                    border-bottom: 2px solid $hover-color;
+                    letter-spacing: 5px;
+                }
 
+                :link {
                     text-decoration: none;
                     font-size: 15px;
                     font-family: $poppins;
                     font-weight: 600;
-                    color: white;
                 }
             }
 
-            .nav__links {
+            .nav__activeLinks {
                 background-color: $secondary-color;
                 border-radius: 10px;
                 padding: 10px;
                 color: white;
                 margin: 10px
             }
-
-            li:hover {
-                border-bottom: 2px solid $hover-color;
-                letter-spacing: 5px;
-            }
         }
+    }
+}
+
+@media only screen and (max-width: 650px),
+screen and (max-height:1254) {
+    nav {
+        display: flex;
+        background-color: blue;
+        overflow: hidden;
+        .nav__logo {
+            margin-right: auto;
+            padding-left: 40px;
+            height: 100px;
+        }
+
+      
+
+        /*   ul {
+            display: flex;
+            //to remove bullet in li 
+            list-style-type: none;
+            background-color: $primary-color;
+            align-items: center;
+
+            .nav__logo {
+                margin-right: auto;
+                padding-left: 40px;
+                height: 100px;
+            }
+
+            // li style
+            li {
+                margin: 25px 50px 25px 0;
+
+                &:hover {
+                    border-bottom: 2px solid $hover-color;
+                    letter-spacing: 5px;
+                }
+
+                :link {
+                    text-decoration: none;
+                    font-size: 15px;
+                    font-family: $poppins;
+                    font-weight: 600;
+                }
+            }
+
+            .nav__activeLinks {
+                background-color: $secondary-color;
+                border-radius: 10px;
+                padding: 10px;
+                color: white;
+                margin: 10px
+            }
+        } */
     }
 }

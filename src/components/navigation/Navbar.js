@@ -9,19 +9,22 @@ export default function Navbar() {
         <div>
             <nav>
                 <ul>
-                    <img src={require('../../assets/Fit.png')} alt="Fit Logo" height="100px" />
+                    <img className="nav__logo" src={require('../../assets/Fit.png')} alt="Fit Logo" />
+                    {/* TODO: Use ternary operator to display the hamburger if it's in mobile view */}
+                    <img className="nav__logo" src={require('../../assets/hamburger.png')} alt="Fit Logo" />
+
                     <li>
-                        <NavLink exact style={{ color: "white" }} activeClassName="nav__links" to="/">HOME</NavLink>
+                        <NavLink exact style={{ color: "white" }} activeClassName="nav__activeLinks" to="/">HOME</NavLink>
                     </li>
                     <li>
-                        <NavLink exact style={{ color: "white" }} activeClassName="nav__links" to="/about">ABOUT US</NavLink>
+                        <NavLink exact style={{ color: "white" }} activeClassName="nav__activeLinks" to="/about">ABOUT US</NavLink>
                     </li>
                     <li>
-                        <NavLink exact style={{ color: "white" }} activeClassName="nav__links" to="/contact">CONTACT US</NavLink>
+                        <NavLink exact style={{ color: "white" }} activeClassName="nav__activeLinks" to="/contact">CONTACT US</NavLink>
                     </li>
 
                     <li>
-                        <NavLink exact style={{ color: "white" }} activeClassName="nav__links" to="/membership">BECOME A MEMBER</NavLink>
+                        <NavLink exact style={{ color: "white" }} activeClassName="nav__activeLinks" to="/membership">BECOME A MEMBER</NavLink>
                     </li>
                 </ul>
             </nav>
@@ -30,6 +33,6 @@ export default function Navbar() {
                     <Route exact key={i} {...route} />
                 ))}
             </Switch>
-        </div >
+        </div>
     )
 }
