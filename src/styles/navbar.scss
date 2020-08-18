@@ -10,10 +10,15 @@
             background-color: $primary-color;
             align-items: center;
 
-            .nav__logo {
+            /* logo */
+            .nav__logo--fit {
                 margin-right: auto;
                 padding-left: 40px;
                 height: 100px;
+            }
+
+            .nav__logo--hamburger {
+                display: none;
             }
 
             // li style
@@ -44,57 +49,23 @@
     }
 }
 
-@media only screen and (max-width: 650px),
-screen and (max-height:1254) {
+@media only screen and (max-width: 650px) {
     nav {
         display: flex;
-        background-color: blue;
+        background-color: $primary-color;
         overflow: hidden;
-        .nav__logo {
-            margin-right: auto;
-            padding-left: 40px;
-            height: 100px;
+
+        .nav__logo--fit {
+            display: none;
         }
 
-      
+        .nav__logo--hamburger {
+            padding: 10px;
+            height: 50px;
+        }
 
-        /*   ul {
-            display: flex;
-            //to remove bullet in li 
-            list-style-type: none;
-            background-color: $primary-color;
-            align-items: center;
-
-            .nav__logo {
-                margin-right: auto;
-                padding-left: 40px;
-                height: 100px;
-            }
-
-            // li style
-            li {
-                margin: 25px 50px 25px 0;
-
-                &:hover {
-                    border-bottom: 2px solid $hover-color;
-                    letter-spacing: 5px;
-                }
-
-                :link {
-                    text-decoration: none;
-                    font-size: 15px;
-                    font-family: $poppins;
-                    font-weight: 600;
-                }
-            }
-
-            .nav__activeLinks {
-                background-color: $secondary-color;
-                border-radius: 10px;
-                padding: 10px;
-                color: white;
-                margin: 10px
-            }
-        } */
+        li {
+            display: none;
+        }
     }
 }
