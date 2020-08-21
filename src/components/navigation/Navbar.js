@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Switch, Route, NavLink } from "react-router-dom";
 import routes from '../../routes/router';
 import '../../styles/navbar.scss';
 
 export default function Navbar() {
+    const [navOpen, setNavOpen] = useState(0);
+    const changeNav = () => {
+        setNavOpen(!navOpen)
+    }
 
     return (
         <nav className="navbar">
-            <ul className="navbar__ul">
-                <img className="nav__logo--hamburger" src={require('../../assets/hamburger.png')} alt="Hamburger Logo" />
-                <img className="nav__logo--fit" src={require('../../assets/Fit.png')} alt="Fit Logo" />
+            <ul className={navOpen ? 'active' : ''}>
+                <figure className="nav__logo" onClick={changeNav}>
+                    <img  src={require('../../assets/Fit.png')} alt="Fit Logo" />
+                </figure>
 
                 <div className="navbar__links">
                     <li>
@@ -27,7 +32,6 @@ export default function Navbar() {
                     </li>
                 </div>
             </ul>
-
             <Switch>
                 {routes.map((route, i) => (
                     <Route exact key={i} {...route} />

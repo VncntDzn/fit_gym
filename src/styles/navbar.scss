@@ -1,27 +1,29 @@
-@import '_base.scss';
+@import '_base';
 
+.navbar {
 
-@media only screen and (min-width:992px) {
-    nav {
-        ul {
-            display: flex;
-            //to remove bullet in li 
-            list-style-type: none;
-            background-color: $primary-color;
-            align-items: center;
+    ul {
+        display: flex;
+        flex-direction: row;
+        background-color: $primary-color;
+        align-items: center;
 
-            /* logo */
-            .nav__logo--fit {
-                margin-right: auto;
-                padding-left: 40px;
+        .nav__logo {
+            margin-right: auto;
+            margin-left: 30px;
+            cursor: pointer;
+            align-content: center;
+
+            img {
                 height: 100px;
             }
+        }
 
-            .nav__logo--hamburger {
-                display: none;
-            }
+        .navbar__links {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
 
-            // li style
             li {
                 margin: 25px 50px 25px 0;
 
@@ -36,39 +38,66 @@
                     font-family: $poppins;
                     font-weight: 600;
                 }
-            }
 
-            .nav__activeLinks {
-                background-color: $secondary-color;
-                border-radius: 10px;
-                padding: 10px;
-                color: white;
-                margin: 10px
+                .nav__activeLinks {
+                    background-color: $secondary-color;
+                    border-radius: 10px;
+                    padding: 10px;
+                    color: white;
+                    margin: 10px
+                }
             }
         }
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
     .navbar {
+        height: 13vh;
         display: flex;
-        background-color: $primary-color;
-        border: 3px solid green;
 
-        .navbar__ul {
+        ul {
+            border-top-right-radius: 30px;
+            background-color: #5A4645;
+            /* border: 3px solid red; */
+            height: 100%;
+            left: -240px;
+            position: fixed;
 
-            .nav__logo--hamburger {
-                padding: 20px 0 20px 20px;
+            top: 70px;
+            flex-direction: column;
+            transition: 300ms ease all;
+
+            &.active {
+                left: 0px;
             }
 
-            .nav__logo--fit {
-                height: 130px;
+            .nav__logo {
+                position: fixed;
+                height: 50px;
+                left: 9px;
+                top: 10px;
+
+                img {
+                    height: 60px;
+                }
             }
 
             .navbar__links {
-                display: none;
+                align-items: center;
+                flex-direction: column;
+                margin: 0 10px;
+
+                li {
+                    margin-top: -5px;
+                    margin-top: 30px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 0 10px;
+
+                }
+
             }
         }
-
     }
 }

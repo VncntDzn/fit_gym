@@ -4,7 +4,7 @@ import AboutUs from '../views/AboutUs';
 import NotFound from '../components/NotFound';
 
 const routes = [
- /*    {
+    {
         path: "/",
         component: Home
     },
@@ -15,7 +15,7 @@ const routes = [
     {
         path: "*",
         component: NotFound
-    } */
+    }
 ];
 
 export default routes;
